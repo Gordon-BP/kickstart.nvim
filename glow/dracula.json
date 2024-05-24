@@ -2,7 +2,8 @@
   "document": {
     "block_prefix": "\n",
     "block_suffix": "\n",
-    "color": "#c5e0e3",
+    "color": "#87ceeb",
+    "background-color":"#222222",
     "indent":4,
     "margin": 2
   },

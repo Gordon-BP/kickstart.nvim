@@ -90,7 +90,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
+unsetopt correct_all
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -99,4 +99,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oah-my-zsh"
-alias llama='function _l370() { llm --template llama70b "$*"| glow -; }; _l370'
+alias new_llama='function _l370() { llm --template llama70b "$*"| glow -; }; _l370'alias llama='function _l370() { llm --continue --template llama70b "$*"| glow -; }; _l370'

@@ -190,6 +190,11 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Move in bulk and then reset the view.
+-- Basically like a page up/page down function
+vim.keymap.set('n', '<C-j>', '30jzt', { desc = 'Moves the cursor down 30 lines and refocuses to the top of the page' })
+vim.keymap.set('n', '<C-k>', '30kzt', { desc = 'Moves the cursor up 30 lines and refocuses to the top of the page' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
